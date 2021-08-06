@@ -1,0 +1,10 @@
+{{#titlebar?}}
+    <div class="north-pane">
+        <div
+            class="logo"
+            title={{title}}
+            style="background-image: url({{icon}});"
+        >
+        </div>
+    </div>
+{{/titlebar?}}

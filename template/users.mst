@@ -1,0 +1,7 @@
+<div class="user-pane">
+    {{#users?}}
+        <div>
+
+        </div>
+    {{/users?}}
+</div>

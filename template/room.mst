@@ -1,0 +1,7 @@
+<div class="room-pane">
+    {{#room?}}
+        <div>
+
+        </div>
+    {{/room?}}
+</div>

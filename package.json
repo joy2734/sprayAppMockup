@@ -1,0 +1,11 @@
+{
+  "name": "sprayAppMockup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:joy2734/sprayAppMockup.git",
+  "author": "joo <sometales7@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "mockup": "npx http-server"
+  }
+}

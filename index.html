@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>spray App Mockup</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.0/mustache.min.js"></script>
+	<link rel="stylesheet" href="./main.css">
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="container">
+	
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$.when($.ajax({url: "./template/main.mst", dataType: 'text'}),
+	$.ajax({url: "./template/titlebar.mst", dataType: 'text'}), 
+	$.ajax({url: "./template/channels.mst", dataType: 'text'}),
+	$.ajax({url: "./template/room.mst", dataType: 'text'}),
+	$.ajax({url: "./template/users.mst", dataType: 'text'}),
+	$.ajax({url: "./template/domains.mst", dataType: 'text'}),
+	$.ajax({url: "./data/dev.json"}))
+	.done(function(template, titlebar, channels, room, users, domains, data){
+        const partials = {
+			titlebar: titlebar[0],
+			channels: channels[0],
+			room: room[0],
+			users: users[0],
+			domains: domains[0]
+		}
+
+		Mustache.parse(template[0]);
+		Mustache.parse(titlebar[0]);
+		Mustache.parse(channels[0]);
+		Mustache.parse(room[0]);
+		Mustache.parse(users[0]);
+		Mustache.parse(domains[0]);
+		var rendered = Mustache.render(template[0], {...data[0]}, {...partials});
+		console.log(rendered)
+		$(".container").html(rendered);
+	})
+	.fail(function(){
+		alert("Sorry there was an error.");
+	});
+});
+</script>
+
+</body>
+</html>

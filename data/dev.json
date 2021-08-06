@@ -1,0 +1,43 @@
+{
+    "titlebar?":{
+      "title": "Spray",
+      "icon": "/images/spray_icon_30x30.png"
+    },
+    "domains":[
+      {"name": "ds", "color": "orange"},
+      {"name": "vive", "color": "red"},
+      {"name": "covision", "color": "blue"}
+    ],
+    "channels":[
+      {
+        "name": "channel1", 
+        "users":[
+          {"name": "hjjoo"},
+          {"name": "test02"}
+        ]
+      },
+      {
+        "name": "channel2", 
+        "users":[
+          {"name": "hjjoo"},
+          {"name": "test01"}
+        ]
+      }
+    ],
+    "room": {
+      "roomId": 0,
+      "roomName": "리그오브레전드",
+      "users": [
+        {"name": "hjjoo"},
+        {"name": "test01"}
+      ]
+    },
+    "users": {
+      "online": [{
+
+      }],
+      "offlone": [{
+        
+      }]
+    }
+}

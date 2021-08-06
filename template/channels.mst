@@ -1,0 +1,7 @@
+<div class="channel-pane">
+    {{#channels?}}
+        <div>
+
+        </div>
+    {{/channels?}}
+</div>

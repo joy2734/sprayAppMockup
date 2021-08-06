@@ -1,0 +1,9 @@
+<div class="wrapper">
+	{{> titlebar}}
+	<div class="center-pane">
+		{{> domains}}
+		{{> channels}}
+		{{> room}}
+		{{> users}}
+	</div>
+</div>

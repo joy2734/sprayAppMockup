@@ -1,0 +1,7 @@
+<div class="domain-pane">
+    {{#domains?}}
+        <div>
+
+        </div>
+    {{/domains?}}
+</div>
