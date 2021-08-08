@@ -16,23 +16,23 @@ html, body {
 
 .north-pane{
     width: 100%;
-    height: 50px;
+    height: 40px;
     background-color:#0fa1e7;
 }
 
 .center-pane{
     width: 100%;
-    height: calc(100% - 50px);
+    height: calc(100% - 40px);
     display: flex;
 }
 
 .logo{
-    margin: 10px;
-    margin-top: 0px;
+    margin: 5px;
     width: 30px;
-    height: 45px;
+    height: 30px;
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 60%;
+    float:left;
 }
 
 .domain-pane{
@@ -40,6 +40,24 @@ html, body {
     background-color: #4baede;
     height: 100%;
     border-right: 1px white solid;
+}
+
+.domain-pane .domain-icon{
+    border: 1px white solid;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 9px;
+    color: white;
+}
+
+.domain-pane .domain-icon.plus-icon{
+    background-image: url('./images/plus-icon.png');
+    background-repeat: no-repeat;
+    border: none;
+    background-size: 90%;
 }
 
 .channel-pane{
@@ -64,4 +82,41 @@ html, body {
     padding: 10px;
     box-sizing: border-box;
     border-radius: 15px;
+}
+
+.channel-pane .domain-info{
+    color: white;
+    padding: 5px;
+}
+
+ul{
+    margin: 0px;
+}
+
+li{
+    list-style: none;
+}
+
+.domain-info .doamin-title{
+    margin-left: 5px;
+}
+
+.domain-info li::before{
+   width: 20px;
+   height: 20px;
+   background-color: chartreuse;
+}
+
+li .offline{
+    width: 20px;
+    height: 20px;
+    background-color: chartreuse;
+}
+
+.divider{
+    clear: both;
+    border: 1px solid white;
+    width: 90%;
+    margin: 5px auto;
+    opacity: 0.3;
 }

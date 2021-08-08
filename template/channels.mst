@@ -1,7 +1,32 @@
 <div class="channel-pane">
+    {{#selectDomain?}}
+        <div class="domain-info">
+            <span class="doamin-title">{{title}}</span>
+            <ul>
+                {{#users}}
+                <li>
+                    {{#status}}
+                        <span class={{status}}></span>
+                    {{/status}}
+                    {{name}}
+                </li>
+                {{/users}}
+            </ul>    
+        </div>
+    {{/selectDomain?}}
+    <div class="divider"></div>
     {{#channels?}}
         <div>
-
+            <ul>
+                {{#users}}
+                    <li>
+                        {{#status}}
+                            <span class={{status}}></span>
+                        {{/status}}
+                        {{name}}
+                    </li>
+                {{/users}}
+            </ul>
         </div>
     {{/channels?}}
 </div>

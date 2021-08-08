@@ -1,7 +1,9 @@
 <div class="domain-pane">
     {{#domains?}}
-        <div>
-
+        <div class="domain-icon" style="background: {{color}};">
+            {{display}}
         </div>
     {{/domains?}}
+    <div class="plus-icon domain-icon">
+    </div>
 </div>

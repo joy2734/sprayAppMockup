@@ -1,38 +1,56 @@
 {
+    "loginUser": "hjjoo",
+    "selectDomain?": {
+      "title":"Datastreams",
+      "users":[
+        {"name": "hjjoo", "status": "online"},
+        {"name": "tom", "status": "offline"},
+        {"name": "choi", "status": "online"}
+      ]
+    },
     "titlebar?":{
       "title": "Spray",
       "icon": "/images/spray_icon_30x30.png"
     },
-    "domains":[
-      {"name": "ds", "color": "orange"},
-      {"name": "vive", "color": "red"},
-      {"name": "covision", "color": "blue"}
+    "domains?":[
+      {"name": "ds", "color": "orange", "display": "DS"},
+      {"name": "vive", "color": "red", "display": "VI"},
+      {"name": "covision", "color": "blue", "display": "Co"}
     ],
-    "channels":[
+    "channels?":[
       {
-        "name": "channel1", 
+        "channelId": 0,
+        "name": "리그오브레전드", 
         "users":[
-          {"name": "hjjoo"},
-          {"name": "test02"}
+          {"name": "hjjoo", "status": "online"},
+          {"name": "test02", "status": "offline"}
         ]
       },
       {
-        "name": "channel2", 
+        "channelId": 1,
+        "name": "원신", 
         "users":[
-          {"name": "hjjoo"},
-          {"name": "test01"}
+          {"name": "hjjoo", "status": "online"},
+          {"name": "test01", "status": "offline"},
+          {"name": "test03", "status": "online"}
         ]
       }
     ],
-    "room": {
+    "room?": {
       "roomId": 0,
       "roomName": "리그오브레전드",
+      "roomDesc": "lol 게임방",
+      "roomCnt": 2,
       "users": [
-        {"name": "hjjoo"},
-        {"name": "test01"}
+        {"name": "hjjoo", "status": "online"},
+        {"name": "test02", "status": "offline"}
+      ],
+      "chatlist":[
+        {"user": "hjjoo", "message": "hi"},
+        {"user": "test02", "message": "lol gogo"}
       ]
     },
-    "users": {
+    "users?": {
       "online": [{
 
       }],
